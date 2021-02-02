@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 const App = () => {
-    
+
     const course = {
         name: 'Half Stack Application Development',
         parts: [
@@ -28,14 +28,6 @@ const Header = ({course}) => {
     );
 };
 
-const Part = ({part}) => {
-    return (
-        <p>
-            {part.name} {part.exercises}
-        </p>
-    );
-};
-
 const Content = ({parts}) => {
     return (
         <div>
@@ -43,6 +35,14 @@ const Content = ({parts}) => {
             <Part part={parts[1]} />
             <Part part={parts[2]} />
         </div>
+    );
+};
+
+const Part = ({part}) => {
+    return (
+        <p>
+            {part.name} {part.exercises}
+        </p>
     );
 };
 

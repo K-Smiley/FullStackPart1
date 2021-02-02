@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+// entire application is in same component
 const App = () => {
   const course = 'Half Stack application development'
   const part1 = 'Fundamentals of React'
